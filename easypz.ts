@@ -269,13 +269,6 @@ class EasyPZ
     public resetAbsoluteScale = new EzEventEmitter<void>();
     
     private totalTransform = { scale: 1, translateX: 0, translateY: 0};
-    public setTotalTransform(transform) {
-        this.totalTransform = transform;
-        this.applyTransformation();
-    }
-    public getTotalTransform() {
-        return this.totalTransform;
-    }
     private totalTransformSnapshot = { scale: 1, translateX: 0, translateY: 0};
     public el: HTMLElement;
     private options = {
