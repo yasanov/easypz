@@ -268,7 +268,7 @@ class EasyPZ
     public onZoomed = new EzEventEmitter<EasyPzZoomData>();
     public resetAbsoluteScale = new EzEventEmitter<void>();
     
-    private totalTransform = { scale: 1, translateX: 0, translateY: 0};
+    public totalTransform = { scale: 1, translateX: 0, translateY: 0};
     private totalTransformSnapshot = { scale: 1, translateX: 0, translateY: 0};
     public el: HTMLElement;
     private options = {
